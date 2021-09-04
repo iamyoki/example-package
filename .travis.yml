@@ -14,8 +14,9 @@ install:
 
 script:
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+  - git symbolic-ref HEAD refs/heads/main
   - npm run release --ci
-
+  
 # deploy:
 #   provider: script
 #   script: npm run release --ci
