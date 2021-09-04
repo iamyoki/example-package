@@ -12,11 +12,13 @@ branches:
 install:
   - npm install
 
-after_success: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+script:
+  - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+  - npm run release --ci
 
-deploy:
-  provider: script
-  script: npm run release --ci
-  skip_cleanup: true
-  on:
-    branch: main
+# deploy:
+#   provider: script
+#   script: npm run release --ci
+#   skip_cleanup: true
+#   on:
+#     branch: main
