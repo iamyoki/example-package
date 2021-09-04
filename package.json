@@ -5,7 +5,8 @@
   "author": "Yoki Yu <yokiyuqian@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "release": "release-it"
+    "release": "release-it",
+    "test": "echo helo"
   },
   "devDependencies": {
     "release-it": "^14.11.5"
