@@ -1,0 +1,25 @@
+language: node_js
+
+node_js:
+  - 14
+
+cache: npm
+
+branches:
+  only:
+    - main
+
+install:
+  - npm ci
+
+script:
+  - npm build
+
+after_success: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+
+deploy:
+  provider: script
+  script: npm run release --ci
+  skip_cleanup: true
+  on:
+    branch: main

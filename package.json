@@ -1,0 +1,13 @@
+{
+  "name": "example-package-2021-09-04",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Yoki Yu <yokiyuqian@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^14.11.5"
+  }
+}
