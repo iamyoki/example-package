@@ -10,7 +10,7 @@ branches:
     - main
 
 install:
-  - npm ci
+  - npm install
 
 script:
   - npm build
