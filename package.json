@@ -1,6 +1,6 @@
 {
   "name": "example-package-to-try-release-it",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Yoki Yu <yokiyuqian@gmail.com>",
   "license": "MIT",
