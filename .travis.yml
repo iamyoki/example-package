@@ -23,7 +23,7 @@ script:
   - git remote set-url origin https://iamyoki:${GITHUB_TOKEN}@github.com/iamyoki/example-package.git
   - git checkout main
   - git add .
-  - git commit -m 'Update hello.md'
+  - git commit -m 'Update hello.md [ci skip]'
   - git push origin
 # deploy:
 #   provider: script
