@@ -16,8 +16,7 @@ script:
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
   - git remote set-url https://iamyoki:${GITHUB_TOKEN}@github.com/iamyoki/example-package.git origin
   - git symbolic-ref HEAD refs/heads/main
-  - npm run release --ci
-
+  - npm run release -- --ci --no-git.requireUpstream
 # deploy:
 #   provider: script
 #   script: npm run release --ci
